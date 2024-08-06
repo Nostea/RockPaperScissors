@@ -5,12 +5,18 @@
 }
 
 html {
+  color: var(--color-dark-blue);
+  text-align: center;
   font-size: 62.5%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.root {
+:root {
   --default-fontsize: 1.6rem;
+  --accent-color: #a6d7d2;
+  --color-purple: rgb(104, 64, 224);
+  --color-orange: #e3aa2a;
+  --color-dark-blue: #162136;
 }
 
 img {
@@ -30,9 +36,9 @@ body {
 .options-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  gap: 30px;
+  margin-left: 20vw;
+  margin-right: 20vw;
   padding-bottom: 4vh;
 }
 
@@ -44,6 +50,13 @@ h3 {
 
 p {
   font-size: 1.6rem;
+}
+
+span {
+  font-size: 2.2rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h1 {
@@ -77,11 +90,11 @@ h3 {
 }
 
 .button-1 {
-  background-color: rgb(104, 64, 224);
+  background-color: var(--color-orange);
   text-decoration: none;
   border-radius: 3rem;
   padding: 1rem 3.2rem 1rem 3.2rem;
   font-size: 1.6rem;
-  color: white;
+  color: var(--color-dark-blue);
   margin-bottom: 4vh;
 }
